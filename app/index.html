@@ -7,8 +7,84 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <div class="container">
+      <div class="header">
+        <!-- Top Bar w/ search box and logo -->
+        <div class="row">
+          <div class="topbar">
+            <img class="etsy-logo" src="images/Etsy Logo.jpg" alt="">
+            <!-- search bar -->
+            <form action="">
+              <input type="text">
+              <input type="submit" value="Search">
+            </form>
+            <!-- Right Bar -->
+            <div class="quicklinks">
+              <a href="">Sell on Etsy</a>
+              <a href="">Register</a>
+              <a href="">Sign In</a>
+              <div class="shoppingcart">
+                Cart
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Categories Bar -->
+        <div class="row">
+          <span>Clothing &amp; Accessories</span>
+          <span>Jewelry</span>
+          <span>Craft Supplies &amp; Tools</span>
+          <span>Weddings</span>
+          <span>Entertainment</span>
+          <span>Home &amp; Living</span>
+          <span>Kids &amp; Baby</span>
+          <span>Vintage</span>
+        </div>
+      </div>
+      <div class="main">
+        <!-- Sidebar -->
+        <div class="col-md-2">
+          <h4>All Categories</h4>
+          <ul>
+            <li>Toys &amp; Games</li>
+            <li>Art &amp; Collectibles</li>
+            <li>Jewelry</li>
+            <li>Bags &amp; Purses</li>
+            <li>Accessories</li>
+            <li>Home &amp; Living</li>
+            <li>Clothing</li>
+            <li>Craft Supplies &amp; Tools</li>
+            <li>Bath &amp; Beauty</li>
+            <li>Electronics &amp; Accessories</li>
+            <li>Paper &amp; Party Supplies</li>
+            <li>Books, Movies &amp; Music</li>
+            <li>Weddings</li>
+            <li>Shoes</li>
+          </ul>
+        </div>
+        <!-- Items for Sale -->
+        <div class="col-md-10">
 
-    <h1>Hello Nathan!</h1>
+        </div>
+
+      </div>
+
+
+
+      <div class="footer">
+
+      </div>
+
+    </div>
+
+    <script id="item-profile" type="text/x-handlebars-template">
+      <div class="col-md-3">
+        <img class="item-pic" src="http://unsplash.it/200/200" alt="">
+        <h5 class="item-title">Titlespot</h5>
+        <span class="creator">Creator Name</span> <span class="price">Price</span>
+      </div>
+    </script>
+
 
     <script src="js/bundle.js"></script>
   </body>

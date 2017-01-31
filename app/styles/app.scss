@@ -5,7 +5,6 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
-
 *,
 *::before,
 *::after {
@@ -14,4 +13,26 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 img {
   max-width: 100%;
+}
+
+.form{
+  
+}
+
+.topbar{
+  position: relative;
+  display:inline-block;
+  width:100%;
+}
+
+.etsy-logo{
+  height: 80px;
+}
+
+.quicklinks{
+  float: right;
+}
+
+ul{
+  // list-style: none;
 }
