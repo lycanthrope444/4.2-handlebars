@@ -15,14 +15,28 @@ img {
   max-width: 100%;
 }
 
-.form{
-  
+body{
+  background-color: #F5F5F1;
+}
+
+.full-page{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+.header{
+  background-color: white;
+}
+
+form{
+  display: inline-block;
 }
 
 .topbar{
-  position: relative;
   display:inline-block;
   width:100%;
+  border-bottom: 1px solid #DEDEDA;
 }
 
 .etsy-logo{
@@ -33,6 +47,38 @@ img {
   float: right;
 }
 
+.categories{
+  border-bottom: 1px solid #DEDEDA;
+}
+
+.main{
+
+}
+
 ul{
-  // list-style: none;
+  list-style: none;
+}
+
+.pictemplate{
+  max-width: 230px;
+  max-height: 230px;
+}
+
+.item-pic{
+  min-width: 100%;
+}
+
+h5 {
+  font-size: 12px;
+  overflow: hidden;
+  height:14px;
+}
+
+.creator{
+  color: #9B9B9B;
+}
+
+.price{
+  color:#8DCA5F;
+  float: right;
 }

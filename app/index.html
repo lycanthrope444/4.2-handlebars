@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container full-page">
       <div class="header">
         <!-- Top Bar w/ search box and logo -->
         <div class="row">
@@ -31,46 +31,49 @@
         </div>
         <!-- Categories Bar -->
         <div class="row">
-          <span>Clothing &amp; Accessories</span>
-          <span>Jewelry</span>
-          <span>Craft Supplies &amp; Tools</span>
-          <span>Weddings</span>
-          <span>Entertainment</span>
-          <span>Home &amp; Living</span>
-          <span>Kids &amp; Baby</span>
-          <span>Vintage</span>
+          <div class ="categories">
+            <a href="">Clothing &amp; Accessories</a>
+            <a href="">Jewelry</a>
+            <a href="">Craft Supplies &amp; Tools</a>
+            <a href="">Weddings</a>
+            <a href="">Entertainment</a>
+            <a href="">Home &amp; Living</a>
+            <a href="">Kids &amp; Baby</a>
+            <a href="">Vintage</a>
+          </div>
         </div>
       </div>
       <div class="main">
         <!-- Sidebar -->
-        <div class="col-md-2">
-          <h4>All Categories</h4>
-          <ul>
-            <li>Toys &amp; Games</li>
-            <li>Art &amp; Collectibles</li>
-            <li>Jewelry</li>
-            <li>Bags &amp; Purses</li>
-            <li>Accessories</li>
-            <li>Home &amp; Living</li>
-            <li>Clothing</li>
-            <li>Craft Supplies &amp; Tools</li>
-            <li>Bath &amp; Beauty</li>
-            <li>Electronics &amp; Accessories</li>
-            <li>Paper &amp; Party Supplies</li>
-            <li>Books, Movies &amp; Music</li>
-            <li>Weddings</li>
-            <li>Shoes</li>
-          </ul>
-        </div>
-        <!-- Items for Sale -->
-        <div class="col-md-10">
+        <div class="row">
+          <div class="row"><span>Show Results For:</span></div>
+          <div class="col-md-2">
+            <h4>All Categories</h4>
+            <ul>
+              <a href=""><li>Toys &amp; Games</li></a>
+              <a href=""><li>Art &amp; Collectibles</li></a>
+              <a href=""><li>Jewelry</li></a>
+              <a href=""><li>Bags &amp; Purses</li></a>
+              <a href=""><li>Accessories</li></a>
+              <a href=""><li>Home &amp; Living</li></a>
+              <a href=""><li>Clothing</li></a>
+              <a href=""><li>Craft Supplies &amp; Tools</li></a>
+              <a href=""><li>Bath &amp; Beauty</li></a>
+              <a href=""><li>Electronics &amp; Accessories</li></a>
+              <a href=""><li>Paper &amp; Party Supplies</li></a>
+              <a href=""><li>Books, Movies &amp; Music</li></a>
+              <a href=""><li>Weddings</li>
+              </a><a href=""><li>Shoes</li></a>
+            </ul>
+          </div>
+          <!-- Items for Sale -->
+          <div class="col-md-10">
+            <div class="search-return">
 
+            </div>
+          </div>
         </div>
-
       </div>
-
-
-
       <div class="footer">
 
       </div>
@@ -79,9 +82,11 @@
 
     <script id="item-profile" type="text/x-handlebars-template">
       <div class="col-md-3">
-        <img class="item-pic" src="http://unsplash.it/200/200" alt="">
-        <h5 class="item-title">Titlespot</h5>
-        <span class="creator">Creator Name</span> <span class="price">Price</span>
+        <div class="pictemplate">
+          <img class="item-pic" src= "{{ picture }}" alt="">
+          <h5 class="item-title"> {{ itemName }}</h5>
+          <span class="creator"> {{ creator }}</span> <span class="price">{{ price }}</span>
+        </div>
       </div>
     </script>
 
