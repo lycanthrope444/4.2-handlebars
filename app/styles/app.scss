@@ -60,8 +60,16 @@ ul{
 }
 
 .pictemplate{
+  background-color: white;
+  border: 1px solid #E1E3DF;
   max-width: 230px;
   max-height: 230px;
+  margin-top:24px;
+  margin-bottom: 10px;
+}
+
+.pictemple:hover{
+  border: 2px solid #E1E3DF;
 }
 
 .item-pic{
@@ -81,4 +89,8 @@ h5 {
 .price{
   color:#8DCA5F;
   float: right;
+}
+
+.price::before{
+  content:'$';
 }
