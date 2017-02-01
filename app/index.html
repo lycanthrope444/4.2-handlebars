@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="container full-page">
+    <div class="container-fluid">
       <div class="header">
         <!-- Top Bar w/ search box and logo -->
         <div class="row">
@@ -19,21 +19,29 @@
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Search for...">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
+                    <button class="btn btn-default searchbutton" type="button">Search</button>
                   </span>
                 </div>
               </form>
             </div>
             <!-- Right Bar -->
             <div class="quicklinks">
-              <a href="">Sell on Etsy</a>
-              <a href="">Register</a>
-              <a href="">Sign In</a>
-              <div class="shoppingcart">
-                <div class="cart">
-                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              <div class="sitelinks">
+                <a href="">Sell on Etsy</a>
+              </div>
+              <div class="sitelinks">
+                <a href="">Register</a>
+              </div>
+              <div class="sitelinks">
+                <a href="">Sign In</a>
+              </div>
+              <div class="sitelinks">
+                <div class="shoppingcart">
+                  <div class="cart">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                  </div>
+                  <span class="hidden-sm">Cart</span>
                 </div>
-                Cart
               </div>
             </div>
           </div>
@@ -52,57 +60,66 @@
           </div>
         </div>
       </div>
-      <div class="main">
-        <!-- Sidebar -->
-        <div class="row">
+      </div>
+      <div class="container">
+        <div class="main">
+          <!-- Sidebar -->
           <div class="row">
-            <div class="col-md-2">
-              <span class="category-filter">Show Results For:</span>
-            </div>
-            <div class="col-md-10">
-              <span class ="searchresults">All Categories&gt;"magic the gathering" (3,253)</span>
-              <div class="sort">Sort by:
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle dropbtnformat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Revelancy <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Most Recent</a></li>
-                    <li><a href="#">Revelancy</a></li>
-                    <li><a href="#">Highest Price</a></li>
-                    <li><a href="#">Lowest Price</a></li>
-                  </ul>
+            <div class="row">
+              <div class="hidden-xs col-md-2">
+                <span class="category-filter">Show Results For:</span>
+              </div>
+              <div class="col-md-10">
+                <a href="https://www.etsy.com/search?q=magic+the+gathering&explicit=1&ref=breadcrumb">
+                  <span class ="searchresults searchcat">All Categories </span>
+                </a>
+                <span class="searchresults">&gt; "magic the gathering" (3,253)</span>
+                <div class="sort">Sort by:
+                  <!-- Dropdown search -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle dropbtnformat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Revelancy <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Most Recent</a></li>
+                      <li><a href="#">Revelancy</a></li>
+                      <li><a href="#">Highest Price</a></li>
+                      <li><a href="#">Lowest Price</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-2 col-md-2">
-            <h4>All Categories</h4>
+            <div class="hidden-xs hidden-sm col-md-2">
+              <div class="sidebar-categories">
+                <h4>All Categories</h4>
+                <ul>
+                  <a href=""><li>Toys &amp; Games</li></a>
+                  <a href=""><li>Art &amp; Collectibles</li></a>
+                  <a href=""><li>Jewelry</li></a>
+                  <a href=""><li>Bags &amp; Purses</li></a>
+                  <a href=""><li>Accessories</li></a>
+                  <a href=""><li>Home &amp; Living</li></a>
+                  <a href=""><li>Clothing</li></a>
+                  <a href=""><li>Craft Supplies &amp; Tools</li></a>
+                  <a href=""><li>Bath &amp; Beauty</li></a>
+                  <a href=""><li>Electronics &amp; Accessories</li></a>
+                  <a href=""><li>Paper &amp; Party Supplies</li></a>
+                  <a href=""><li>Books, Movies &amp; Music</li></a>
+                  <a href=""><li>Weddings</li>
+                  </a><a href=""><li>Shoes</li></a>
+                </ul>
+              </div>
+              <div class="sidebar-filters">
 
-            <ul>
-              <a href=""><li>Toys &amp; Games</li></a>
-              <a href=""><li>Art &amp; Collectibles</li></a>
-              <a href=""><li>Jewelry</li></a>
-              <a href=""><li>Bags &amp; Purses</li></a>
-              <a href=""><li>Accessories</li></a>
-              <a href=""><li>Home &amp; Living</li></a>
-              <a href=""><li>Clothing</li></a>
-              <a href=""><li>Craft Supplies &amp; Tools</li></a>
-              <a href=""><li>Bath &amp; Beauty</li></a>
-              <a href=""><li>Electronics &amp; Accessories</li></a>
-              <a href=""><li>Paper &amp; Party Supplies</li></a>
-              <a href=""><li>Books, Movies &amp; Music</li></a>
-              <a href=""><li>Weddings</li>
-              </a><a href=""><li>Shoes</li></a>
-            </ul>
-          </div>
-          <!-- Items for Sale -->
-          <div class="col-xs-10 col-md-10">
-            <div class="search-return">
+              </div>
+            </div>
+            <!-- Items for Sale -->
+            <div class="col-sm-12 col-md-10">
+              <div class="search-return">
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
       <div class="footer">
 
       </div>
@@ -111,15 +128,17 @@
 
     <script id="item-profile" type="text/x-handlebars-template">
       <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="pictemplate">
-          <img class="item-pic" src= "{{ picture }}" alt="">
-          <h5 class="item-title"> {{ itemName }}</h5>
-          <span class="creator"> {{ creator }}</span> <span class="price">{{ price }}</span>
-        </div>
+        <a href="{{ etsylink }}">
+          <div class="pictemplate">
+            <img class="item-pic" src= "{{ picture }}" alt="">
+            <h5 class="item-title"> {{ itemName }}</h5>
+            <span class="creator"> {{ creator }}</span> <span class="price">{{ price }}</span>
+          </div>
+        </a>
       </div>
     </script>
-
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

@@ -22,21 +22,24 @@ body{
   background-color: #F5F5F1;
 }
 
-.full-page{
-  // margin-left: 0px;
-  // margin-right: 0px;
+.header{
+  position: relative;
+  background-color: white;
   width: 100%;
 }
 
-.header{
+.header > .row{
   background-color: white;
 }
 
 form{
   display: inline-block;
+  position: relative;
+  top: 20px;
 }
 
 .topbar{
+  background-color: white;
   display:inline-block;
   width:100%;
   border-bottom: 1px solid #DEDEDA;
@@ -60,6 +63,17 @@ form{
   position: relative;
   float: right;
   top: 30px;
+  width: 25%;
+}
+
+.quicklinks > div{
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.shoppingcart{
+  border-left: 1px solid #EEEEEE;
+  padding-left:40%;
 }
 
 .categories{
@@ -108,8 +122,24 @@ form{
   border: none;
 }
 
+.sidebar-categories{
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-radius: 2px;
+}
+
+h4{
+  font-size: 14px;
+}
+
 ul{
   list-style: none;
+  padding-left: 12px;
+}
+
+li{
+  color:$etsyblue;
+  font-size: 14px;
 }
 
 .pictemplate{
@@ -118,7 +148,6 @@ ul{
   border-radius: 3px;
   max-width: 230px;
   max-height: 235px;
-  margin-top:24px;
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -139,11 +168,13 @@ h5 {
 
 .creator{
   color: #9B9B9B;
+  font-size: 12px;
 }
 
 .price{
   color:#8DCA5F;
   float: right;
+  font-size: 12px;
 }
 
 .price::before{

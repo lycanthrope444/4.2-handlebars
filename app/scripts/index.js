@@ -48,6 +48,7 @@ var $searchReturn = $(".search-return");
 fetchJSONP(url, function(data) {
   _.each(data.results, function(items){
     var specifics = {
+      etsylink: items.url,
       picture: items.Images[0].url_170x135,
       itemName: items.title,
       creator: items.Shop.shop_name,
