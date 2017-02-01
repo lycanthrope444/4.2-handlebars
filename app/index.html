@@ -15,8 +15,8 @@
             <img class="etsy-logo" src="images/Etsy Logo.jpg" alt="">
             <!-- search bar -->
             <form action="">
-              <input type="text">
-              <input type="submit" value="Search">
+              <input type="text" class="searchbox">
+              <input type="submit" value="Search" class="searchbutton">
             </form>
             <!-- Right Bar -->
             <div class="quicklinks">
@@ -24,6 +24,9 @@
               <a href="">Register</a>
               <a href="">Sign In</a>
               <div class="shoppingcart">
+                <div class="cart">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </div>
                 Cart
               </div>
             </div>
@@ -46,9 +49,29 @@
       <div class="main">
         <!-- Sidebar -->
         <div class="row">
-          <div class="row"><span>Show Results For:</span></div>
+          <div class="row">
+            <div class="col-md-2">
+              <span class="category-filter">Show Results For:</span>
+            </div>
+            <div class="col-md-10">
+              <span class ="searchresults">All Categories&gt;"magic the gathering" (3,253)</span>
+              <div class="sort">Sort by:
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Revelancy <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Most Recent</a></li>
+                    <li><a href="#">Revelancy</a></li>
+                    <li><a href="#">Highest Price</a></li>
+                    <li><a href="#">Lowest Price</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-md-2">
             <h4>All Categories</h4>
+
             <ul>
               <a href=""><li>Toys &amp; Games</li></a>
               <a href=""><li>Art &amp; Collectibles</li></a>

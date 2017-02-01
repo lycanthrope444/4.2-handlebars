@@ -43,16 +43,57 @@ form{
   height: 80px;
 }
 
+.searchbox{
+
+}
+
+.searchbutton{
+  color: white;
+  background-color: #34A8C4;
+}
+
 .quicklinks{
+  position: relative;
   float: right;
+  top: 30px;
 }
 
 .categories{
   border-bottom: 1px solid #DEDEDA;
+  height: 40px;
+  background-color: white;
+}
+
+.categories > a{
+  display: inline-block;
+  color: #77777F;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.shoppingcart{
+  display: inline-block;
 }
 
 .main{
 
+}
+
+.category-filter{
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.searchresults{
+  display: inline-block;
+}
+
+.sort{
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 ul{
@@ -62,10 +103,12 @@ ul{
 .pictemplate{
   background-color: white;
   border: 1px solid #E1E3DF;
+  border-radius: 3px;
   max-width: 230px;
   max-height: 230px;
   margin-top:24px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .pictemple:hover{
