@@ -62,18 +62,41 @@ form{
 .quicklinks{
   position: relative;
   float: right;
-  top: 30px;
-  width: 25%;
+  top: 20px;
 }
 
 .quicklinks > div{
   display: inline-block;
   margin-right: 5%;
+  color: $etsyblue;
+}
+
+.sitelinks > a{
+  color:$etsyblue;
+  text-decoration: none;
+}
+
+.signin{
+  border: 1px solid $etsyblue;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.signin:hover{
+  background-color: #F0FBFD;
+
 }
 
 .shoppingcart{
   border-left: 1px solid #EEEEEE;
   padding-left:40%;
+  color:#666666;
+  position: relative;
+  top: 5px;
+}
+
+.shoppingcart:hover{
+  color:black;
 }
 
 .categories{
@@ -146,8 +169,8 @@ li{
   background-color: white;
   border: 1px solid #E1E3DF;
   border-radius: 3px;
-  max-width: 230px;
-  max-height: 235px;
+  max-width: 275px;
+  max-height: 275px;
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -179,4 +202,21 @@ h5 {
 
 .price::before{
   content:'$';
+}
+
+.footer{
+  border-top: 1px solid #DEDEDA;
+  width: 100%;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.bottomlinks > a {
+  font-size: 12px;
+  margin-top: 12px;
+  display: block;
+  color: black;
+  text-decoration: none;
 }
