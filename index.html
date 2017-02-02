@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4.2-handlebars</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+        <!-- Top Bar w/ search box and logo -->
+        <div class="row">
+          <div class="topbar">
+            <img class="etsy-logo" src="images/Etsy Logo.jpg" alt="">
+            <!-- search bar -->
+            <div class="col-xs-4">
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default searchbutton" type="button">Search</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <!-- Right Bar -->
+            <div class="row">
+              <div class="col-sm-4 quicklinks">
+                <div class="sitelinks">
+                  <a href="">Sell on Etsy</a>
+                </div>
+                <div class="sitelinks">
+                  <a href="">Register</a>
+                </div>
+                <div class="sitelinks signin">
+                  <a href="">Sign In</a>
+                </div>
+                <div class="sitelinks">
+                  <div class="shoppingcart">
+                    <div class="cart">
+                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    </div>
+                    <span class="hidden-xs hidden-sm">Cart</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Categories Bar -->
+        <div class="row">
+          <!-- This is somehow repsonive into a drop-down menu -->
+          <div class ="categories">
+            <a href="">Clothing &amp; Accessories</a>
+            <a href="">Jewelry</a>
+            <a href="">Craft Supplies &amp; Tools</a>
+            <a href="">Weddings</a>
+            <a href="">Entertainment</a>
+            <a href="">Home &amp; Living</a>
+            <a href="">Kids &amp; Baby</a>
+            <a href="">Vintage</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="main">
+          <!-- Sidebar -->
+          <div class="row">
+            <div class="row">
+              <div class="hidden-xs col-md-2">
+                <span class="category-filter">Show Results For:</span>
+              </div>
+              <div class="col-md-10">
+                <a href="https://www.etsy.com/search?q=magic+the+gathering&explicit=1&ref=breadcrumb">
+                  <span class ="searchresults searchcat">All Categories </span>
+                </a>
+                <span class="searchresults">&gt; "magic the gathering" (3,253)</span>
+                <div class="sort">Sort by:
+                  <!-- Dropdown search -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle dropbtnformat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Revelancy <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Most Recent</a></li>
+                      <li><a href="#">Revelancy</a></li>
+                      <li><a href="#">Highest Price</a></li>
+                      <li><a href="#">Lowest Price</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2">
+              <div class="sidebar-categories">
+                <h4>All Categories</h4>
+                <ul>
+                  <a href=""><li>Toys &amp; Games</li></a>
+                  <a href=""><li>Art &amp; Collectibles</li></a>
+                  <a href=""><li>Jewelry</li></a>
+                  <a href=""><li>Bags &amp; Purses</li></a>
+                  <a href=""><li>Accessories</li></a>
+                  <a href=""><li>Home &amp; Living</li></a>
+                  <a href=""><li>Clothing</li></a>
+                  <a href=""><li>Craft Supplies &amp; Tools</li></a>
+                  <a href=""><li>Bath &amp; Beauty</li></a>
+                  <a href=""><li>Electronics &amp; Accessories</li></a>
+                  <a href=""><li>Paper &amp; Party Supplies</li></a>
+                  <a href=""><li>Books, Movies &amp; Music</li></a>
+                  <a href=""><li>Weddings</li>
+                  </a><a href=""><li>Shoes</li></a>
+                </ul>
+              </div>
+              <div class="hidden-xs hidden-sm col-md-2 sidebar-filters">
+                Other Sidebar Here
+              </div>
+            </div>
+            <!-- Items for Sale -->
+            <div class="col-sm-12 col-md-10">
+              <div class="search-return">
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-2">
+            <div class="bottomlinks">
+              <h6>Turn your passion into a business</h6>
+              <button type="button" class="btn btn-info">Open a shop</button>
+              <h6>Sell on Etsy</h6>
+              <a href="">Open a shop</a>
+              <a href="">Seller Handbook</a>
+              <a href="">Etsy credit card reader</a>
+              <a href="">Manufacturing</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bottomlinks">
+              <h6>Join the community</h6>
+              <a href="">Teams</a>
+              <a href="">Forums</a>
+              <a href="">Upcoming events</a>
+              <a href="">Affiliates</a>
+              <a href="">Etsy Local</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bottomlinks">
+            <h6>Discover and shop</h6>
+            <a href="">Gift cards</a>
+            <a href="">Blog</a>
+            <a href="">Mobile apps</a>
+            <a href="">Gift registries</a>
+            <a href="">Wholesale</a>
+            <a href="">Search</a>
+            <a href="">Editors’ Picks</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bottomlinks">
+              <h6>Get to know us</h6>
+              <a href="">About</a>
+              <a href="">Policies</a>
+              <a href="">Careers</a>
+              <a href="">Press</a>
+              <a href="">Developers</a>
+              <a href="">Investors</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bottomlinks">
+              <h6>Follow Etsy</h6>
+              <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i><span>Facebook</span></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+              <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i><span>Pinterest</span></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          Bottom-bar Info
+        </div>
+      </div>
+    </div>
+
+    <script id="item-profile" type="text/x-handlebars-template">
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="{{ etsylink }}">
+          <div class="pictemplate">
+            <img class="item-pic" src= "{{ picture }}" alt="">
+            <h5 class="item-title"> {{ itemName }}</h5>
+            <span class="creator"> {{ creator }}</span> <span class="price">{{ price }}</span>
+          </div>
+        </a>
+      </div>
+    </script>
+    <script src="https://use.fontawesome.com/3556bf80d1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
